@@ -406,6 +406,23 @@ aside {
     color: var(--pink-col);
 }
 
+.arrow i:hover {
+    color: var(--turquoise);
+}
+
+.copy {
+    font-size: 1.5rem;
+}
+
+.ladycornish {
+
+    transition: font-size .5s ease-in;
+}
+
+.ladycornish:hover  {
+    font-size: 2rem;
+}
+
 
 /*responsive */
 
