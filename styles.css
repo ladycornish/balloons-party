@@ -230,9 +230,52 @@ img {
     align-content: center;
 }
 
-#more {
+.fulltext p,
+.less {
     display: none;
 }
+
+.fulltext:target p,
+.fulltext:target .less {
+    display: block;
+    color: grey;
+    font-size: 2rem;
+    padding: 2rem 2rem 0 2rem;
+    text-align:start;
+}
+
+.fulltext:target .more {
+    display: none;
+}
+
+#close-1, #close-2, #close-3,
+.more {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    color: var(--pink-col); 
+}
+
+#close-1:hover,
+#close-2:hover,
+#close-3:hover,
+.more:hover {
+    color: var(--orange);
+}
+
+#close-1:focus,
+#close-2:focus,
+#close-3:focus,
+.more:focus {
+    color: var(--orange);
+}
+
+#close-1:visited,
+#close-2:visited,
+#close-3:visited,
+.more:visited {
+    color: var(--turquoise);
+}
+
 
 .service-btn {
     width: auto;
