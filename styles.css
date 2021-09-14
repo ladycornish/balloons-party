@@ -76,6 +76,7 @@ img {
 .social-media-links i:hover {
     background-color: white;
     color: var(--orange);
+    transform: scale(1.2);
     transition: all 0.2s ease-in;
 }  
 
@@ -458,12 +459,14 @@ aside {
 }
 
 .ladycornish {
-
-    transition: font-size .5s ease-in;
+    color: #fff;
+    
 }
 
 .ladycornish:hover  {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    color: var(--blue-col);
+    transition: all .5s ease-in;
 }
 
 
