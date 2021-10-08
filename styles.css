@@ -201,28 +201,39 @@ img {
 }
 
 /* Section 1 start */
-.section-1 {
-    width: 100%;
-    height: auto;
-    background-color: #D8FDFA;
 
+
+.section-1 {
+    width: 100vw;
+    height: auto;
+    padding: 5% 0 5% 0;
+    background-color: #D8FDFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.services-box {
+    width: 88%;
+    height: 85%;
+    background: #fff;
 }
 
 .container {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
-    padding: 3em;
     border-top: 1px solid var(--turquoise);
+    padding-top: 5em;
 }
 
 .section-1-heading {
-    font-size: 10vmin;
+    font-size: 8vmin;
     opacity: 0.8;
     text-align: center;
     font-weight: bold;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
-
 
 .service-cards {
     display: flex;
@@ -231,115 +242,75 @@ img {
     align-content: center;
 }
 
-.fulltext p,
-.less {
-    display: none;
-}
-
-.fulltext:target p,
-.fulltext:target .less {
-    display: block;
-    color: grey;
-    font-size: 2rem;
-    padding: 2rem 2rem 0 2rem;
-    text-align:start;
-}
-
-.fulltext:target .more {
-    display: none;
-}
-
-#close-1, #close-2, #close-3,
-.more {
+.services-link {
+    text-decoration: none;
+    color: var(--pink-col);
     font-size: 1.5rem;
-    padding-left: 2rem;
-    color: var(--pink-col); 
+    padding-bottom: 1em;
 }
 
-#close-1:hover,
-#close-2:hover,
-#close-3:hover,
-.more:hover {
-    color: var(--orange);
+.services-link:hover, 
+.services-link:focus {
+    text-decoration: underline;
+    color: var(--blue-col);
 }
 
-#close-1:focus,
-#close-2:focus,
-#close-3:focus,
-.more:focus {
-    color: var(--orange);
-}
-
-#close-1:visited,
-#close-2:visited,
-#close-3:visited,
-.more:visited {
+.services-link:visited {
     color: var(--turquoise);
 }
 
-
-.service-btn {
-    width: auto;
-    border: none;
-    margin: 0 auto;
-    cursor: pointer;
-    color: grey;
-    text-decoration: underline;
-    padding: 0 1em;
-    font-size: 1.5rem;
-    background: transparent;
-    transition: all .4s ease-in;
-}
-
-.service-btn:hover {
-    background: var(--turquoise);
-    opacity: .7;
-    color: #fffffc;
-    transform: scale(1.1);
-}
-
-#meu {
- color:var(--pink-col);
-}
-#meu:hover {
-    text-decoration: underline;
-}
-
 .card {
-    width: 40%;
+    width: 30%;
     margin-bottom: 5rem;
-    padding: .5em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: .5em .5em .2em #e3e3e3, -.5em -.5em .2em #e3e3e3;
 }
 
 .card i {
     text-align: center;
-    font-size: 5rem;
+    font-size: 3vmin;
     color: var(--turquoise);
     opacity: .4;
     padding-bottom: 1rem;
 }
 
 .card-header {
-    font-size: 3rem;
+    font-size: 3.5vmin;
     letter-spacing: 0.2rem;
     text-align: center;
-    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--turquoise);
 }
 
 .card-text {
     color: grey;
-    font-size: 2rem;
-    padding: 2rem 2rem 0 2rem;
+    font-size: 2vmin;
+    padding: 1em 3rem 0 3rem;
     text-align:start;
+    line-height: 1.6;
 }
+
+
+/* Section 2 */
 .section-2 {
-    width: 100%;
+    width: 100vw;
+    height: auto;
+    padding: 5% 0 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery-box {
+    width: 88%;
+    height: 85%;
+    background: #fff;
 }
 .gallery-text {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4vmin;
     color: var(--pink-col);
     padding-bottom: 1rem;
     line-height: 1.5;
@@ -350,16 +321,17 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    width: 80%;
 }
 
 .gallery-container {
-    width: 85%;
+    width: 100%;
     margin: 2rem;
 }
 
 .gallery {
-    margin: 4rem 1rem;
+    margin: 3rem 1rem;
     padding: 1rem;
     border: 2px solid var(--pink-col);
 }
@@ -373,11 +345,19 @@ img {
     padding: .5rem 0;
 }
 
+/* Contact Section */
+
 .section-3 {
     width: 100%;
     height: auto;
     background-color: rgba(225, 183, 205, 0.4);
+    padding: 5% 0 5% 0;
+}
 
+.contact-box {
+    width: 80%;
+    background: #fff;
+    margin: 0 auto;
 }
 .contact-section {
     width: 90%;
@@ -460,12 +440,12 @@ aside {
 
 .ladycornish {
     color: #fff;
+    text-decoration: none;
     
 }
 
 .ladycornish:hover  {
-    font-size: 1.8rem;
-    color: var(--blue-col);
+    text-decoration: underline;
     transition: all .5s ease-in;
 }
 
@@ -500,6 +480,7 @@ aside {
     .main-gallery {
         flex-direction: row;
         align-items: center;
+       
     }
 }
 
@@ -512,6 +493,17 @@ aside {
     .card {
         width: 100%;
     }
+    .card i {
+        font-size: 3rem;
+        padding-top: .5em;
+    }
+
+    .card-header {
+        font-size: 22px;
+    }
+    .card-text {
+    font-size: 15px;
+    }
     .contact-section {
         flex-direction: column;
     }
@@ -519,4 +511,17 @@ aside {
         margin: 0 auto;
     }
 }
+
+@media (max-width: 375px) {
+    .card-contact p {
+        font-size: 1.5rem;
+    }
+    .footer-text {
+        font-size: 1.5rem;
+    }
+    .copy {
+        font-size: 1rem;
+    }
+}
+
 
